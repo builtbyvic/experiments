@@ -1,0 +1,74 @@
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --metric-box-spacing: 16px;
+  --color-off-blue: #222222;
+  --primary-text-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --gradient: linear-gradient(to right, red, orange);
+}
+:root,body {
+  min-block-size: 100vh;
+}
+body {
+  margin: calc(var(--metric-box-spacing)*4);
+}
+h1,h2,p {
+  margin: var(--metric-box-spacing);
+}
+/* cards with grid and flexbox */
+/* grid */
+.cards {
+  display: grid;
+  gap: var(--metric-box-spacing);
+  grid-template-columns: repeat(auto-fill,minmax(15em,1fr));
+}
+.card {
+  background-color: var(--color-off-blue);
+  border-radius: calc(var(--metric-box-spacing)/2);
+  color: var(--primary-text-color);
+  letter-spacing: .1ch;
+  padding: calc(var(--metric-box-spacing)/2);
+}
+/* flexbox */
+/* .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  flex-basis: 15em;
+  flex-grow: 1;
+} */
+/* micro-layouts with grid */
+#fancy-heading {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr auto 1fr;
+}
+#fancy-heading::before,#fancy-heading::after {
+  align-self: center;
+  border-bottom: 0.3em double black;
+  content: "";
+}
+/* micro-layouts with flexbox.*/
+svg {
+  flex: 1;
+  max-inline-size: 10em;
+}
+.media {
+  align-items: center;
+  display: flex;
+  gap: 2em;
+}
+.media-content {
+  flex: 3;
+}
+/* container queries */
+.h-5 {
+  margin: auto;
+  max-inline-size: 10em;
+}
