@@ -8,7 +8,11 @@
   --metric-box-spacing: 16px;
   --color-off-blue: #222222;
   --primary-text-color: #fff;
+  accent-color: red;
+  color-scheme: light;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(1rem, 0.5rem + 1.5vw,2rem);
+  line-height: 1.2;
   --gradient: linear-gradient(to right, red, orange);
 }
 :root,body {
@@ -31,7 +35,8 @@ h1,h2,p {
   background-color: var(--color-off-blue);
   border-radius: calc(var(--metric-box-spacing)/2);
   color: var(--primary-text-color);
-  letter-spacing: .1ch;
+  /* letter-spacing: .1ch; */
+  max-inline-size: 66ch;
   padding: calc(var(--metric-box-spacing)/2);
 }
 /* flexbox */
@@ -72,3 +77,44 @@ svg {
   margin: auto;
   max-inline-size: 10em;
 }
+/* holidays */
+.holiday-card {
+  border: 2px solid #222;
+  border-radius: var(--metric-box-spacing);
+  padding: var(--metric-box-spacing);
+}
+img {
+  aspect-ratio: 2/1;
+  block-size: auto;
+  max-inline-size: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.holiday-cards {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill,minmax(15em,1fr));
+}
+/* theming */
+/* form {
+  border: 2px solid #222;
+  padding: var(--metric-box-spacing);
+}
+form div {
+  margin-block-end: var(--metric-box-spacing);
+}
+[type="text"],[type="password"] {
+  border-radius: calc(var(--metric-box-spacing)/2);
+  padding: calc(var(--metric-box-spacing) / 4);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    accent-color: pink;
+    color-scheme: dark;
+  }
+  body {
+    background-color: var(--color-off-blue);
+    color: var(--primary-text-color);
+  }
+} */
+/* accessibility */
