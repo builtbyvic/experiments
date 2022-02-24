@@ -118,3 +118,33 @@ form div {
   }
 } */
 /* accessibility */
+/* pseudo-elements */
+.pseudo::first-letter {
+  border: .25rem solid #0c55ff;
+  color: #0c55ff;
+  float: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  line-height: 1;
+  margin-inline-end: .2rem;
+  padding: .5rem;
+}
+.pseudo-one::first-line {
+  color: goldenrod;
+  font-weight: bold;
+}
+::marker {
+  color: hotpink;
+}
+ul ::marker {
+  font-size: 1.5rem;
+}
+summary::marker {
+  border: .5rem solid hotpink;
+  content: '\002B'' ';
+}
+details[open] summary::marker {
+  content: '\2212'' ';
+}
+
+/* you can only insert ::before and ::after only on elements that accept child elements */
