@@ -146,5 +146,15 @@ summary::marker {
 details[open] summary::marker {
   content: '\2212'' ';
 }
+::selection {
+  background-color: hotpink;
+  color: #fff;
+}
+input {
+  padding: 4px;
+}
+input::placeholder {
+  color: hotpink;
+}
 
 /* you can only insert ::before and ::after only on elements that accept child elements */
