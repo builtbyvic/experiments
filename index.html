@@ -204,8 +204,15 @@
     <p>you can acomplish html spacing using br and hr </p>
     <hr>
     <h4>css spacing</h4>
-    <p>margin</p>
-    <h4></h4>
+    <h5>margin</h5>
+    <p>with margin, you can add space outside an element. Margin can be defined with a length,percentage or auto value. *With percentage,the value is calcuated based on the width of the element's containing block</p>
+    <div style="height:400px;width:400px;border:2px solid red;">
+      <div style="height:200px;width:200px;border:2px solid blue;margin:10% 20% 10%;"></div>
+    </div>
+    <p>margins also take negative values leading to overlapping elements</p>
+    <div style="height:400px;width:400px;border:2px solid red;"></div>
+    <div style="height:400px;width:400px;border:2px solid green;margin-block-start: -40px;"></div>
+    <p>concept of collapsing margins for <strong>adjacent</strong> sibling elements. margins of elements with position set to absolute and float property don't collapse</p>
   </main>
   <footer></footer>
 </body>
