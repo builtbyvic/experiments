@@ -179,3 +179,22 @@ input::placeholder {
     grid-template-columns: repeat(auto-fill,minmax(15em,1fr));
   }
 }
+strong {
+  font-weight: 700;
+}
+.my-component {
+  font-weight: 500;
+}
+.my-component strong {
+  font-weight: inherit;
+}
+.my-article {
+  background-color: hotpink;
+  border-radius: .5rem;
+  padding: 2em;
+  width: 300px;
+}
+.my-article:hover {
+  transform: scale(1.05);
+  transition: transform .5s linear;
+}
