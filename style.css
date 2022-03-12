@@ -198,3 +198,21 @@ strong {
   transform: scale(1.05);
   transition: transform .5s linear;
 }
+.my-grid {
+  background-color: lightblue;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: 200px repeat(2,1fr 2fr);
+  grid-template-rows: 200px auto;
+}
+.grid-item {
+  border: 1px solid black;
+}
+.positions {
+  background-color: hotpink;
+  border-radius: .5rem;
+  block-size: 5rem;
+  inline-size: 5rem;
+  /* inset-block-start: 100px; */
+  position: relative;
+}
