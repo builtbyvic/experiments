@@ -216,3 +216,64 @@ strong {
   /* inset-block-start: 100px; */
   position: relative;
 }
+.my-pseudo :first-child {
+  color: #fff;
+  background-color: red;
+}
+.my-pseudo :last-child {
+  color: #fff;
+  background-color: green;
+}
+.my-pseudo li:nth-child(2) {
+  background-color: yellow;
+} 
+.my-pseudo li:nth-child(even) {
+  background-color: yellow;
+}
+.z-box {
+  background-color: grey;
+  border-radius: .5rem;
+  block-size: 10rem;
+  inline-size: 10rem;
+  margin-block-end: 2rem;
+  position: relative;
+}
+#one {
+  background-color: chartreuse;
+}
+#two {
+  background-color: darkred;
+  margin-block-start: -8rem;
+}
+#three {
+  background-color: firebrick;
+  margin-block-start: -8rem;
+}
+.crypto {
+  background-image: linear-gradient(to right,blue,purple);
+  border: none;
+  border-radius: .5rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: .5rem;
+}
+.crypto:hover {
+  background-image: linear-gradient(to right, purple, blue);
+  transform: scale(1.1);
+  transition: all .5s linear;
+}
+.blur {
+  cursor: pointer;
+  filter: blur(4px);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.bright {
+  cursor: pointer;
+  filter: brightness(550%);
+  font-size: 1.5em;
+  font-weight: bold;
+}
