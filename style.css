@@ -277,3 +277,6 @@ strong {
   font-size: 1.5em;
   font-weight: bold;
 }
+.u-list {
+  list-style-position: inside;
+}
